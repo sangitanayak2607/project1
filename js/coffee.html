@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Blend — Home</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/coffee.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">COFFEE <span class="text-warning">BLEND</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero d-flex align-items-center justify-content-center text-center">
+    <div class="container" data-aos="fade-up">
+      <h5 class="text-warning mb-3">Welcome</h5>
+      <h1 class="display-4 fw-bold text-white mb-3" id="typing-text"></h1>
+      <p class="text-white-50 mb-4">
+        A small river named Duden flows by their place and supplies it with the necessary regelialia.
+      </p>
+      <div>
+        <a href="#" class="btn btn-warning btn-lg me-3">Order Now</a>
+        <a href="#" class="btn btn-outline-light btn-lg">View Menu</a>
+      </div>
+    </div>
+
+    <!-- Book a Table Card -->
+    <div class="book-table-card" data-aos="fade-left">
+      <h5 class="text-white mb-3">BOOK A TABLE</h5>
+      <form>
+        <div class="row g-2">
+          <div class="col-6">
+            <input type="text" class="form-control" placeholder="First Name">
+          </div>
+          <div class="col-6">
+            <input type="text" class="form-control" placeholder="Last Name">
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-dark w-100 mt-2">Book Now</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Bootstrap & AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/coffee.js"></script>
+</body>
+</html>

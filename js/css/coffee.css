@@ -1,0 +1,70 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  transition: background 0.3s ease;
+}
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  color: white;
+}
+
+/* Overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Hero Text */
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Book a Table Card */
+.book-table-card {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  background-color: rgba(216, 174, 100, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  z-index: 2;
+}
+
+.book-table-card input {
+  border: none;
+  padding: 10px;
+}
+
+.book-table-card input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .book-table-card {
+    position: static;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
